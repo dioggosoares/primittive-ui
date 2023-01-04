@@ -1,0 +1,4 @@
+{
+  "extends": "@primittive-ui/ts-config/react.json",
+  "include": ["src"],
+}

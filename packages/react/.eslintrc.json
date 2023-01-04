@@ -1,0 +1,3 @@
+{
+  "extends": "@primittive-ui/eslint-config"
+}
