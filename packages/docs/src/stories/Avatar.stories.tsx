@@ -7,6 +7,8 @@ export default {
   args: {
     src: 'https://github.com/dioggosoares.png',
     alt: 'Diogo Soares',
+    name: 'Diogo Soares',
+    colorScheme: 'primary',
   },
   argTypes: {
     src: {
@@ -28,8 +30,17 @@ export default {
 
 export const Primary: StoryObj<AvatarProps> = {}
 
-export const WithFallback: StoryObj<AvatarProps> = {
+export const WithFallbackName: StoryObj<AvatarProps> = {
   args: {
     src: undefined,
+    name: 'Diogo Soares',
+    fallBackType: 'name',
+  },
+}
+
+export const WithFallbackIcon: StoryObj<AvatarProps> = {
+  args: {
+    src: undefined,
+    fallBackType: 'icon',
   },
 }
