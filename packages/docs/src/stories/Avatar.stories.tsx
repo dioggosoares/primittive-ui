@@ -34,13 +34,13 @@ export const WithFallbackName: StoryObj<AvatarProps> = {
   args: {
     src: undefined,
     name: 'Diogo Soares',
-    fallBackType: 'name',
+    fallbacktype: 'name',
   },
 }
 
 export const WithFallbackIcon: StoryObj<AvatarProps> = {
   args: {
     src: undefined,
-    fallBackType: 'icon',
+    fallbacktype: 'icon',
   },
 }

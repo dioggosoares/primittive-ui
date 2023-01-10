@@ -5,7 +5,7 @@ import { AvatarContainer, AvatarImage, AvatarFallback } from './styles'
 
 export interface AvatarProps extends ComponentProps<typeof AvatarImage> {
   name?: string
-  fallBackType?: 'icon' | 'name'
+  fallbacktype?: 'icon' | 'name'
   colorScheme?: 'primary' | 'secondary' | 'tertiary'
 }
 
@@ -15,7 +15,7 @@ export function Avatar(props: AvatarProps) {
       <AvatarImage {...props} />
 
       <AvatarFallback delayMs={600} colorScheme={props.colorScheme}>
-        {props?.fallBackType === 'name' ? (
+        {props?.fallbacktype === 'name' ? (
           capitalizeLetters(props?.name ?? '')
         ) : (
           <User />
